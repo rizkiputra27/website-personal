@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: #ffffff;
+    color: #1e1e24;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    background-color: #808080;
+}
+header h1 {
+    color: #f7f7f2;
+}
+.logo {
+    color: #1e1e24;
+    font-size: 1.2rem;
+    font-weight: 600;
+    left: 0%;
+    padding: 3rem;
+}
+.navmenu {
+    display: flex;
+    padding-top: 0;
+}
+.navmenu a {
+    display: inline-block;
+    margin: 0 1.5rem;
+    color: #fafafb;
+    font-weight: 500;
+    transition: all 0.6s;
+    padding-top: 0;
+}
+.navmenu a:hover {
+    transform: translateY(-5px);
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem 5rem 0 8rem;
+    gap: 1rem;
+}
+.home-img {
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.home-text h2 {
+    font-size: 100%;
+    margin-bottom: 1rem;
+}
+.home-text h3 {
+    position: relative;
+    padding-left: 5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.home-text h3::before {
+    content: "";
+    position: absolute;
+    width:75px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1.5rem;
+}
+.home-text p {
+    margin-bottom: 2rem;
+}
+.btn {
+    display: inline-block;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #f7f7f2;
+    border: 2px solid #1e1e24;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    background: #1e1e24;
+    transition: all 0.5s;
+}
+.btn.hover {
+    background: #f7f7f2;
+    color: #1e1e24;
+    transform: translateY(5px);
+}
+.socials-icons {
+    position: absolute;
+    top: 40%;
+    padding: 0 3rem;
+    left: 0%;
+}
+.socials-icons i {
+    display: block;
+    margin: 25px 0;
+    color: #1e1e24;
+    font-size: 1.5rem;
+    transition: all 0.6ms;
+}
+.socials-icons i:hover {
+    transform: rotate3d(0, 0, 1, 90deg);
+}
+.scroll-btn {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+}
+.scroll-btn {
+    color: #1e1e24;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
